@@ -1,0 +1,24 @@
+    API Name 	Answers the following question
+http://stackbot-9323.appspot.com/percent_dev_hobby	I want to know about the number of people who code as an hobby
+http://stackbot-9323.appspot.com/dev_open_source_project	How many people contribute to the open source project
+http://stackbot-9323.appspot.com/countries_by_respondent	Where do they reside
+http://stackbot-9323.appspot.com/dev_who_are_students	How many developers are students
+http://stackbot-9323.appspot.com/dev_employment	What is their employment
+http://stackbot-9323.appspot.com/job_satisfaction	How satisfied are you with their current job
+http://stackbot-9323.appspot.com/coding_exp	How many years people have been coding
+http://stackbot-9323.appspot.com/coding_proficiency	How many years of coding proficiency they have
+http://stackbot-9323.appspot.com/career_satisfaction	OveraTell me about their overall career satisfaction
+http://stackbot-9323.appspot.com/job_search_status	what is their job search status
+http://stackbot-9323.appspot.com/last_time_when_new_job_taken	When was the last time you took a new job
+http://stackbot-9323.appspot.com/currency	What currency do they use day to day
+http://stackbot-9323.appspot.com/stackOF_jobs	How many people used or visited Stack Overflow Jobs?
+http://stackbot-9323.appspot.com/dev_story_StackOF	How many people  have an up-to-date Developer Story on Stack Overflow?
+http://stackbot-9323.appspot.com/os_dev	What is the primary operating system in which you work?
+http://stackbot-9323.appspot.com/stackOF_checking	how often have developers checked-in or committed code?
+http://stackbot-9323.appspot.com/AI_dangerous_aspects	What do developers think is the most dangerous aspect of increasingly advanced AI technology?
+http://stackbot-9323.appspot.com/AI_interesting_Aspects	What do developers think is the most interesting aspect of increasingly advanced AI technology?
+http://stackbot-9323.appspot.com/AI_responsibilities	"Whose responsibility is it, primarily, to consider the ramifications of increasingly advanced AI technology?"
+http://stackbot-9323.appspot.com/future_of_AI	what's developers take on the future of artificial intelligence?
+http://stackbot-9323.appspot.com/find_jobs	Tell me the recent job posts 
+http://stackbot-9323.appspot.com/recent_trends	update me the latest happenings
+http://stackbot-9323.appspot.com/show_summary/<string>	search {} and give me the summary
