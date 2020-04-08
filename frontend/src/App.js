@@ -13,8 +13,8 @@ function App() {
     <Router>
       <Switch>
         <Route path="/about" component={About} />
-        <Route path="/login" component={Login} />
-        <Route path="/" component={DashAlerts} />
+        <Route path="/dash-alerts" component={DashAlerts} />
+        <Route path="/" component={Login} />
       </Switch>
     </Router>
   );

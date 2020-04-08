@@ -1,11 +1,16 @@
 import React from 'react';
 
+import Header from './../layout/Header'
+
 function DashAlerts() {
   return (
-    <div style={{textAlign: "center"}}>
-      <h1>This is the Dash Alerts page</h1>
-      <h3>------- Group 4 -------</h3>
+    <div>
+      <Header/>
+      <div style={{textAlign: "center"}}>
+        <h1>This is the Dash Alerts page</h1>
+      </div>
     </div>
+    
   )
 }
 

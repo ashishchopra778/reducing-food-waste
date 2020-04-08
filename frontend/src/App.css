@@ -24,7 +24,7 @@
 }
 
 .Login-bg {
-  background-image: url("./images/bg2.jpg");
+  background-image: url("./images/loginBackground.jpg");
   height: 100vh;
   /* height: 700px; */
   background-position: center;
@@ -32,11 +32,28 @@
   background-size: cover;
 }
 
+.btn-login {
+  font-family:'Open Sans';
+}
+
+.btn-outline-light:hover {
+  color: #007bff;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled).active, .btn-outline-light:not(:disabled):not(.disabled):active, .show > .btn-outline-light.dropdown-toggle {
+  color: #0163cc;
+  background-color: #f8f9fa;
+  border-color:#f8f9fa
+}
+
 .transparent-input {
   background-color: rgba(0, 0, 0, 0);
   border:none;
 }
 
+.transparent {
+  background: rgba(0,0,0,0);
+}
 
 .form-control::-webkit-input-placeholder {
   color: white;
