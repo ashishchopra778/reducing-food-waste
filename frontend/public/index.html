@@ -45,10 +45,30 @@
       {
         box-shadow: inset 0 -1px 0 #ddd;
       }
+
+      .transparent {
+        background: rgba(0,0,0,0);
+      }
     </style>
-    <title>Cirrus Transit</title>
+    <title>Cirrus Transit</title> 
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="#">Cirrus Transit</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item m-1">
+            <button class="bg-transparent btn btn-outline-light btn-block border-white rounded-pill">About</button>
+          </li>
+          <li class="nav-item m-1">
+            <button class="bg-transparent btn btn-outline-light btn-block border-white rounded-pill">Sign up</button>
+          </li>
+        </ul> 
+      </div>
+    </nav>
     <div class="container-fluid h-100">
       <div class="row justify-content-center align-items-center h-100">
           <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -60,7 +80,7 @@
                     <input id ="input-password" class="text-white bg-transparent rounded-0 form-control border border-white border-left-0 border-top-0 border-right-0" placeholder="Password"  type="password">
                   </div>
                   <div class="form-group">
-                      <button class="bg-transparent btn btn-info btn-lg btn-block border-white" onclick="this.blur();">Sign In</button>
+                      <button class="bg-white text-primary btn btn-primary  rounded-pill border-primary" >Login</button>
                   </div>
               </form>
           </div>
