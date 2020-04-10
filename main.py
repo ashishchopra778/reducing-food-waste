@@ -1,5 +1,5 @@
 import pandas as pd
-from flask import Flask, render_template
+from flask import Flask, render_template,request
 app = Flask(__name__)
 data = pd.read_csv("CTData.csv",encoding= 'unicode_escape')
 
@@ -15,8 +15,14 @@ temp_stand ={'Chill' : 4 ,
              'Banana': 14,
              'DF'    : -30}
 
-@app.route('/temp_timeseries_day/<string:freight>/<string:box>/<string:month>/<string:day>')
-def temp_timeseries_day(freight,box,month,day):
+#@app.route('/temp_timeseries_day/<string:freight>/<string:box>/<string:month>/<string:day>')
+@app.route('/temp_timeseries_day',methods=['GET'])
+def temp_timeseries_day():
+    freight = request.form.get("freight")
+    box = request.form.get("box")
+    month = request.form.get("month")
+    day = request.form.get("day")
+    
     name = freight+box+'.csv'
     tdata = pd.read_csv(name,encoding= 'unicode_escape')
     ttdata = pd.DataFrame()
@@ -32,8 +38,13 @@ def temp_timeseries_day(freight,box,month,day):
     lab = df.values[:, 0]
     return render_template(a, title=b, max=temp_stand[tempStand], labels=lab, values=v, length = len(df))
 
-@app.route('/temp_timeseries_month/<string:freight>/<string:box>/<string:month>')
-def temp_timeseries_month(freight,box,month):
+#@app.route('/temp_timeseries_month/<string:freight>/<string:box>/<string:month>')
+@app.route('/temp_timeseries_month',methods=['GET'])
+def temp_timeseries_month():
+    freight = request.form.get("freight")
+    box = request.form.get("box")
+    month = request.form.get("month")
+    
     name = freight+box+'.csv'
     tdata = pd.read_csv(name,encoding= 'unicode_escape')
     ttdata = pd.DataFrame()
@@ -50,8 +61,12 @@ def temp_timeseries_month(freight,box,month):
     lab = df.values[:, 0]
     return render_template(a, title=b, max=temp_stand[tempStand], labels=lab, values=v, length = len(df))
 
-@app.route('/humidity_timeseries_month/<string:freight>/<string:box>/<string:month>')
-def humidity_timeseries_month(freight,box,month):
+@app.route('/humidity_timeseries_month',methods=['GET'])
+def humidity_timeseries_month():
+    freight = request.form.get("freight")
+    box = request.form.get("box")
+    month = request.form.get("month")
+    
     name = freight+box+'.csv'
     tdata = pd.read_csv(name,encoding= 'unicode_escape')
     ttdata = pd.DataFrame()
@@ -67,8 +82,10 @@ def humidity_timeseries_month(freight,box,month):
     lab = df.values[:, 0]
     return render_template(a, title=b, max=100, labels=lab, values=v)
 
-@app.route('/overall_product_detail/<string:name>')
-def overall_product_detail(name):
+@app.route('/overall_product_detail',methods=['GET'])
+def overall_product_detail():
+    name = request.form.get("name")
+    
     sample =  data[(data['Product_Type'] == name)]
     print(sample)
     temp = sample['Temp_Standard'].value_counts()
@@ -90,8 +107,10 @@ def overall_status():
     lab = df.values[:, 0]
     return render_template(a, title=b, max=150, labels=lab, values=v)
 
-@app.route('/freight/<string:status>')
-def freight(status):
+@app.route('/freight',methods=['GET'])
+def freight():
+    status = request.form.get("status")
+    
     status_data = data[data['Status'] == status]
     temp = status_data['Product_Type'].value_counts()
     df = pd.DataFrame({'labels': temp.index, 'values': temp.values})
@@ -111,8 +130,10 @@ def overall_product_details():
     lab = df.values[:, 0]
     return render_template(a, title=b, max=50, labels=lab, values=v)
 
-@app.route('/total_products_by_freight/<string:name>')
-def total_products_by_freight(name):
+@app.route('/total_products_by_freight',methods=['GET'])
+def total_products_by_freight():
+    name = request.form.get("name")
+     
     temp1 = data[data['Freight'] == name]
     temp = temp1['Product_Type'].value_counts()
     df = pd.DataFrame({'labels': temp.index, 'values': temp.values})
