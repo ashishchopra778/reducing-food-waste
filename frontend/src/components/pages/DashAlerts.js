@@ -7,7 +7,7 @@ function DashAlerts() {
     <div>
       <Header/>
       <div style={{textAlign: "center"}}>
-        <h1>This is the Dash Alerts page</h1>
+        <h1>Hello This is the Dash Alerts page</h1>
       </div>
     </div>
     
