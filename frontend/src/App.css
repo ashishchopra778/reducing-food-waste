@@ -32,6 +32,16 @@
   background-size: cover;
 }
 
+.Dash-bg {
+  background-color: #b1d8f2;
+  height: 100vh;
+}
+
+
+.sidenav {
+  height: 100%;
+}
+
 .btn-login {
   font-family:'Open Sans';
 }
