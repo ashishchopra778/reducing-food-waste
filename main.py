@@ -145,4 +145,4 @@ def total_products_by_freight():
 
 
 
-app.run()
+app.run(debug = True, port = 5000)
