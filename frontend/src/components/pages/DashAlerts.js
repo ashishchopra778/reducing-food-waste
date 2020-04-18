@@ -16,23 +16,30 @@ function DashAlerts() {
         <div class="container-fluid pt-5 h-100">
           <div class="row h-100 pt-4">
             <div className="header" class="col-2 h-100 shadow-lg pt-5 bg-white border border-dark">
-                <h5 style={{color:'#4fa4ff'}}>Alerts</h5>
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <td scope="row"><NavLink to="/">In Progress</NavLink></td>
-                    </tr>
-                  </thead>
-                  <thead>
-                    <tr>
-                      <td scope="row"><NavLink to="/shipping">Past Shipments</NavLink></td>
-                    </tr>
-                  </thead>
+              <div class="container h-100">             
+                  <table class="table table-hover h-40">
+                      <tr>
+                        <td scope="row"><NavLink to="/">Dashboard</NavLink></td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><NavLink to="/in-progress">In Progress</NavLink></td>
+                      </tr>
+                      <tr>
+                        <td  scope="row"><NavLink to="/shipping">Past Shipments</NavLink></td>
+                      </tr>
+                      <tr>
+                        <td  scope="row"><NavLink to="/my-recommendations">My Recommendations</NavLink></td>
+                      </tr>
+                      <tr>
+                        <td  scope="row"><NavLink to="/manage-dash">Manage My Dashboard</NavLink></td>
+                      </tr>
                 </table>
+              </div>
             </div>
             <div class="col-10 h-75">
               <Route exact path="/" component={ContainerData}/>
-              <Route path="/shipping" component={Shipping}/>
+              <Route path="/in-progress" component={Shipping}/>
+              <Route path="/my-recommendations" component={MyRecommendations}/>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
 import React from 'react';
-import SideNav from './../layout/SideNav'
-
+// import SideNav from './../layout/SideNav'
+// *** SideNav.js was not included in the last commit. Presume it exists but was not added to git ***
 function About() {
   return (
     <div class="container-fluid h-100">
-      <SideNav />
+      {/* <SideNav /> */}
       <div class="col-10">
             <div class="container h-75 mt-5"> 
               <div class="row h-100">
