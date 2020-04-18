@@ -7,6 +7,7 @@ import {
 import Header from './../layout/Header'
 import ContainerData from "./../layout/ContainerData";
 import Shipping from "./../layout/Shipping";
+import MyRecommendations from "./../layout/MyRecommendations"
 
 function DashAlerts() {
   return (
