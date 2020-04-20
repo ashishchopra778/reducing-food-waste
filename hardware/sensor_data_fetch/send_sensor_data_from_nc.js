@@ -4,7 +4,7 @@ const HOST = '127.0.0.1';
 const PORT = 2000;
 
 
-var connectionString = "HostName=Cirrus-Transit.azure-devices.net;DeviceId=mySensorData;SharedAccessKey=7hsbLINoy4P48KJ4mF8pA17bZScsbGsE6zUzJO7YveE=";
+var connectionString = "HostName=xxxxxxxxxx;DeviceId=xxxxxxx;SharedAccessKey=xxxxxxxxxxxx";
  
 // use factory function from AMQP-specific package
 var clientFromConnectionString = require('azure-iot-device-amqp').clientFromConnectionString;
