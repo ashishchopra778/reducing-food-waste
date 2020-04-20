@@ -17,15 +17,15 @@ Steps :
 3. Login to Pi via Laptop1 and run ./neo_start.sh in ~/neocortec/Raspberry.Pi 
 4. In Pi, tail -f /var/log/syslog | grep -A 10 -B 10 "NeoCortec" for debugging
 5. In Laptop2, run 
-	ls -lathr /dev/ttyUSB*
-   This could show /dev/ttyUSB0 and /dev/ttyUSB1 
+	ls -lathr /dev/ttyUSB*   
+   This could show /dev/ttyUSB0 and /dev/ttyUSB1    
    				or /dev/ttyUSB1 and /dev/ttyUSB2
 6. In Laptop2,
-	sudo chmod a+rw /dev/ttyUSBx
+	sudo chmod a+rw /dev/ttyUSBx   
 		for both
 7. In Laptop2, in neo.gateway.405/src/NeoCortecGateway/Release, run     
 	./NeoCortecGateway -C uart=/dev/ttyUSB0
-		if usb devices are USB0 and USB1  |    
+		if usb devices are USB0 and USB1         
 	./NeoCortecGateway -C uart=/dev/ttyUSB2
 		if usb devices are USB1 and USB2
 8. In Laptop1, 
