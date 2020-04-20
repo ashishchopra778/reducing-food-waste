@@ -1,0 +1,14 @@
+[Unit]
+Description=NeoCortec Gateway Service
+After=network.target
+
+[Service]
+User=root
+ExecStart=/lib/systemd/NeoCortecGateway -C uart=/dev/ttyUSB0
+StandardOutput=syslog
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
+Alias=NeoGW.service
+
