@@ -23,9 +23,9 @@ Steps :
 6. In Laptop2,
 	sudo chmod a+rw /dev/ttyUSBx
 		for both
-7. In Laptop2, in neo.gateway.405/src/NeoCortecGateway/Release, run
+7. In Laptop2, in neo.gateway.405/src/NeoCortecGateway/Release, run     
 	./NeoCortecGateway -C uart=/dev/ttyUSB0
-		if usb devices are USB0 and USB1
+		if usb devices are USB0 and USB1  |    
 	./NeoCortecGateway -C uart=/dev/ttyUSB2
 		if usb devices are USB1 and USB2
 8. In Laptop1, 
