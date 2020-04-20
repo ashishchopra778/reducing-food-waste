@@ -32,9 +32,9 @@ Steps :
 		sudo node send_sensor_data.js
 9. In Laptop2,
 		sudo node send_sensor_data_from_nc.js
-10. Data will be sent from Laptop1 to cloud via internet
+10. Data will be sent from Laptop1 to cloud via internet.
 	This simulates data sent over cellular network
-11. Disable Wifi in Laptop1 to see data sent via NeoCortecs to Laptop2
+11. Disable Wifi in Laptop1 to see data sent via NeoCortecs to Laptop2.
 	This simulates data sent via satellite
 
 
