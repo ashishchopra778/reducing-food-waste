@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from "react-router-dom";
-import { useForm } from 'react-hook-form/dist/react-hook-form.ie11';
+import useForm from 'react-hook-form/dist/react-hook-form.ie11';
 import Header from './../layout/Header';
 // import { Redirect } from 'react-router';
 
